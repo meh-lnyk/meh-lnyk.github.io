@@ -1,0 +1,106 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: sans-serif;
+color: #333;
+line-height: 1.6;
+background-color: #fefefe;
+}
+
+/* Overall Layout */
+header, section, footer {
+width: 90%;
+max-width: 800px;
+margin: 2rem auto;
+}
+
+header {
+text-align: center;
+margin-top: 4rem;
+}
+
+/* Hero / Intro Section */
+.hero h1 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 1rem;
+}
+
+.hero .cta {
+display: inline-block;
+margin-top: 1rem;
+padding: 0.75rem 1.25rem;
+text-decoration: none;
+background-color: #007acc;
+color: #fff;
+border-radius: 5px;
+}
+
+/* About Section */
+.about {
+margin-top: 3rem;
+}
+
+.about h2 {
+font-size: 1.8rem;
+margin-bottom: 1rem;
+}
+
+.about p {
+margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects {
+margin-top: 3rem;
+}
+
+.projects h2 {
+font-size: 1.8rem;
+margin-bottom: 1rem;
+}
+
+.project-list {
+list-style: none;
+}
+
+.project-list li {
+margin: 1rem 0;
+}
+
+.project-list a {
+color: #007acc;
+text-decoration: none;
+}
+
+/* Contact / Social Section */
+.contact {
+margin-top: 3rem;
+text-align: center;
+}
+
+.contact h2 {
+font-size: 1.8rem;
+margin-bottom: 1rem;
+}
+
+.social-links a {
+margin: 0 1rem;
+color: #007acc;
+text-decoration: none;
+}
+
+/* Footer */
+footer {
+text-align: center;
+font-size: 0.9rem;
+color: #777;
+}
