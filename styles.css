@@ -1,106 +1,91 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-font-family: sans-serif;
-color: #333;
-line-height: 1.6;
-background-color: #fefefe;
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+    padding-left: 20px;
 }
 
-/* Overall Layout */
-header, section, footer {
-width: 90%;
-max-width: 800px;
-margin: 2rem auto;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007acc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header {
-text-align: center;
-margin-top: 4rem;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-/* Hero / Intro Section */
-.hero h1 {
-font-size: 2.5rem;
-margin-bottom: 1rem;
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.hero p {
-font-size: 1.2rem;
-margin-bottom: 1rem;
+.navbar nav ul li {
+    display: inline;
 }
 
-.hero .cta {
-display: inline-block;
-margin-top: 1rem;
-padding: 0.75rem 1.25rem;
-text-decoration: none;
-background-color: #007acc;
-color: #fff;
-border-radius: 5px;
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-/* About Section */
-.about {
-margin-top: 3rem;
+.navbar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-.about h2 {
-font-size: 1.8rem;
-margin-bottom: 1rem;
-}
-
-.about p {
-margin-bottom: 1rem;
-}
-
-/* Projects Section */
-.projects {
-margin-top: 3rem;
-}
-
-.projects h2 {
-font-size: 1.8rem;
-margin-bottom: 1rem;
-}
-
-.project-list {
-list-style: none;
-}
-
-.project-list li {
-margin: 1rem 0;
-}
-
-.project-list a {
-color: #007acc;
-text-decoration: none;
-}
-
-/* Contact / Social Section */
-.contact {
-margin-top: 3rem;
-text-align: center;
-}
-
-.contact h2 {
-font-size: 1.8rem;
-margin-bottom: 1rem;
-}
-
-.social-links a {
-margin: 0 1rem;
-color: #007acc;
-text-decoration: none;
-}
-
-/* Footer */
 footer {
-text-align: center;
-font-size: 0.9rem;
-color: #777;
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
